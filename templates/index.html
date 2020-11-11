@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/2437/2437972.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<body style="display: inline; letter-spacing: 0.25px;">
+    <h1>Hello World!</h1>
+    <ol>
+        {%for i in fruits%}
+        <li><p>{{i}}</p></li>
+        {%endfor%}
+    </ol>
+    {%for i in fruits%}
+        <p>{{loop.index}}&nbsp{{i}}</p><br/>
+    {%endfor%}
+    <br/>
+    {%for i in pattern%}
+        <p>{{loop.index*2}}&nbsp{{i}}</p><br/>
+    {%endfor%}
+    {%if age<18 %}
+    <h3>Underage</h3>
+    {%else%}
+    <h3>You can drive</h3>
+    {%endif%}
+</body>
+</html>

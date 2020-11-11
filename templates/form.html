@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/2437/2437972.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<body>
+    <form action="/form" method="POST" class="signup" autocomplete="off">
+        <h1>Review</h1>
+    
+        <div class="signup__field">
+            <input class="signup__input" type="text" name="field1" required />
+            <label class="signup__label" for="name">Name</label>
+        </div>
+        <div class="signup__field">
+            <textarea name="review" rows="4" cols="50" class="signup__input"></textarea>
+            <label class="signup__label" for="name">Review</label>
+        </div>
+        <input type="submit" value="Review" class="button">
+    </form>
+</body>
+</html>

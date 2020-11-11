@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/2437/2437972.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<body>
+    <form action="/signup" method="POST" class="signup" autocomplete="off">
+        <h1>Create Account</h1>
+        <h2>Already have an account? <a href="/login"><span>Log in</span></h2></a>
+    
+        <div class="signup__field">
+            <input class="signup__input" type="text" name="username"required />
+            <label class="signup__label" for="name">Name</label>
+        </div>
+    
+        <div class="signup__field">
+            <input class="signup__input" type="email" name="email" required />
+            <label class="signup__label" for="email">Email</label>
+        </div>
+    
+        <div class="signup__field">
+            <input class="signup__input" type="password" name="password" required />
+            <label class="signup__label" for="password">Password</label>
+        </div>
+
+        <input type="submit" value="Sign up" class="button">
+        
+    </form>
+</body>
+</html>
